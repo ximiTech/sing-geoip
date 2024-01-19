@@ -270,7 +270,7 @@ func setActionOutput(name string, content string) error {
 }
 
 func main() {
-	err := release("Loyalsoldier/geoip", "1715173329/sing-geoip", "geoip.db", "rule-set")
+	err := release("Loyalsoldier/geoip", "ximiTech/sing-geoip", "geoip.db", "rule-set")
 	if err != nil {
 		log.Fatal(err)
 	}
