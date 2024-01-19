@@ -43,6 +43,7 @@ jobs:
       - name: Release geoip
         uses: softprops/action-gh-release@v1
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           tag_name: ${{ steps.build.outputs.tag }}
           name: ${{ steps.build.outputs.tag }}
           draft: false
